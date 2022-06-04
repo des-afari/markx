@@ -1,0 +1,18 @@
+.login {
+  height: 100vh;
+  background-color: #7FEAA5;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.login div:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginContainer {
+  background-color: white;
+  height: 60vh;
+}
+/*# sourceMappingURL=login.module.css.map */

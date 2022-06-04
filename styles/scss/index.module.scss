@@ -1,0 +1,62 @@
+@import './config';
+
+.mainIndex{
+    min-height: calc(100vh - 5em);
+}
+
+
+.frontPage{
+    height: calc(100vh - 5em);
+    background-color: #000;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @include padding;
+
+    div:nth-child(1){
+        padding-top: 1em;
+        
+        h1{
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 4rem;
+            line-height: 3.8rem;
+            letter-spacing: -3px;
+            margin-bottom: .3em;
+
+            span{
+                color: $green;
+            }
+        }
+
+       p{
+           margin-bottom: 2em;
+           color: gray;
+           width: 92%;
+       }
+    }
+
+    div:nth-child(2){
+        @include flex(flex-end, center);
+
+    }
+}
+
+.linkContainer{
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    a{
+        font-family: 'Inter', sans-serif;
+        font-size: .9em;
+        @include flex(center, center);
+        
+    }
+
+    a:nth-child(1){
+        padding: 1em;
+        background-color: $green;
+        color: white;
+        font-weight: 700;
+    }
+}

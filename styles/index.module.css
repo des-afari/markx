@@ -1,0 +1,62 @@
+.mainIndex {
+  min-height: calc(100vh - 5em);
+}
+
+.frontPage {
+  height: calc(100vh - 5em);
+  background-color: #000;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 3em;
+}
+
+.frontPage div:nth-child(1) {
+  padding-top: 1em;
+}
+
+.frontPage div:nth-child(1) h1 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 4rem;
+  line-height: 3.8rem;
+  letter-spacing: -3px;
+  margin-bottom: .3em;
+}
+
+.frontPage div:nth-child(1) h1 span {
+  color: #00D54B;
+}
+
+.frontPage div:nth-child(1) p {
+  margin-bottom: 2em;
+  color: gray;
+  width: 92%;
+}
+
+.frontPage div:nth-child(2) {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.linkContainer {
+  width: 50%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.linkContainer a {
+  font-family: 'Inter', sans-serif;
+  font-size: .9em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.linkContainer a:nth-child(1) {
+  padding: 1em;
+  background-color: #00D54B;
+  color: white;
+  font-weight: 700;
+}
+/*# sourceMappingURL=index.module.css.map */

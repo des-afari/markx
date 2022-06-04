@@ -1,0 +1,23 @@
+@mixin flex($justify, $align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin padding {
+    padding: 0 3em;
+}
+
+//colors
+$green: #00D54B;
+$lightgreen: #7FEAA5;
+$lightergreen: #CCF7DB;
+
+$blue: #407BFF;
+$lightblue: #C5D7FF;
+
+$red: #f23333;
+
+$lightgray: #F6F6F6;
+
+$lightyellow: #FAFD7B;
