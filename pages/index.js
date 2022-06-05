@@ -14,7 +14,7 @@ export default function Home() {
             <h1>The <span>fastest</span> and most convenient way to invest in Ghana</h1>
             <p>suitable for your purposes and needs and causing the least difficulty: Our local shop has very convenient opening hours a bikes a very. </p>
             <div className={styles.linkContainer}>
-              <Link href='/'>
+              <Link href='/signup'>
                 <a>Get Started</a>
               </Link>
               <Link href='/'>
@@ -22,7 +22,7 @@ export default function Home() {
               </Link>
             </div>
          </div>
-         <div>
+         <div>            
            <Image src={milestone} alt='milestone' />
          </div>
         </div>

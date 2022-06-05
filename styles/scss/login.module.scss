@@ -1,20 +1,105 @@
 @import './config';
 
 .login{
+    position: relative;
     height: 100vh;
-    background-color: $lightgreen;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #F5F2EA;
+}
 
-    div:nth-child(1){
-        @include flex(center, center);
-    }
+.logo{
+    position: absolute;
+    top: 19px;
+    left: 3em;
 
-    div:nth-child(2){
+}
+
+.loginSitting, .loginTyping{
+    @include flex(center, center);
+}
+
+.loginCenter{
+    @include flex(center, center);
+    flex-direction: column;
+}
+
+.formContainer{
+    background-color: white;
+    border-radius: 10px;
+    padding: 2em;
+    width: 80%;
+    margin-bottom: 1em;
+
+    h2{
+        text-align: center;
+        font-family: 'Inter', 'Segoe UI', sans-serif;
+        font-weight: 900;
     }
 }
 
-.loginContainer{
-    background-color: white;
-    height: 60vh;
+.forgotPassword{
+    a{
+        color: $green;
+    }
+}
+
+.form{
+    margin-top: 2.5em;
+    display: flex;
+    flex-direction: column;
+
+    input{
+        margin-bottom: .8em;
+        padding: .5em .3em;
+        font-size: .9rem;
+        font-family: 'Inter', 'Segoe UI', sans-serif;
+    }
+
+    button{
+        padding: .7em 0;
+        border: 1px solid $green;
+        background-color: $green;
+        color: white;
+        width: 100%;
+        font-family: 'Inter', 'Segoe UI', sans-serif;
+        font-weight: 700;
+        font-size: .95rem;
+        border-radius: 4px;
+        margin-top: 1.5em;
+    }
+}
+
+.seperation{
+    text-align: center;
+    font-size: .9rem;
+    color: gray;
+    margin-top: 1.5em;
+}
+
+.externalLoginContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: .5em;
+}
+
+.externalLogin{
+    @include flex(center, center);
+    border: 1px solid gray;
+
+    p{
+        font-family: 'Inter', 'Segoe UI', sans-serif;
+        font-weight: 700;
+        font-size: .85rem;
+    }
+}
+
+.externalLogin:last-of-type{
+    column-gap: .5em;
+}
+
+.footer{
+    a{
+        color: $green;
+    }
 }

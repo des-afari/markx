@@ -11,11 +11,11 @@
   padding: 0 3em;
 }
 
-.frontPage div:nth-child(1) {
+.frontPage > div:nth-child(1) {
   padding-top: 1em;
 }
 
-.frontPage div:nth-child(1) h1 {
+.frontPage > div:nth-child(1) h1 {
   font-family: 'Space Grotesk', sans-serif;
   font-size: 4rem;
   line-height: 3.8rem;
@@ -23,17 +23,17 @@
   margin-bottom: .3em;
 }
 
-.frontPage div:nth-child(1) h1 span {
+.frontPage > div:nth-child(1) h1 span {
   color: #00D54B;
 }
 
-.frontPage div:nth-child(1) p {
+.frontPage > div:nth-child(1) p {
   margin-bottom: 2em;
   color: gray;
   width: 92%;
 }
 
-.frontPage div:nth-child(2) {
+.frontPage > div:nth-child(2) {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -53,7 +53,7 @@
   align-items: center;
 }
 
-.linkContainer a:nth-child(1) {
+.linkContainer > a:nth-child(1) {
   padding: 1em;
   background-color: #00D54B;
   color: white;

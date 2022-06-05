@@ -1,0 +1,136 @@
+@import './config';
+
+.signup{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    & > div:nth-child(1){
+        position: relative;
+        background-color: $lightgreen;
+        @include flex(center, center);
+    }
+}
+
+.logo{
+  position: absolute;
+  top: 19px;
+  left: 3em;
+  height: 5em;
+  
+}
+
+.signupContainer{
+    padding: 4em;
+    
+    h2{
+        font-family: 'Inter', 'Segoe UI', sans-serif;
+        font-weight: 900;
+        margin-bottom: .3em;
+    }
+}
+
+.loginLink{
+    color: gray;
+
+    a{
+        color: $green;
+    }
+}
+
+.externalSignupContainer{
+    margin-top: 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: .5em;
+}
+
+.externalSignup{
+    @include flex(center, center);
+    column-gap: .5em;
+    border: 1px solid gray;
+    
+    p{
+        font-family: 'Inter', 'Segoe UI', sans-serif;
+        font-weight: 700;
+        font-size: .85rem;
+    }
+}
+
+.externalSignup:last-of-type{
+    background-color: #000;
+    color: white;
+}
+
+.seperation{
+    text-align: center;
+    font-size: .9rem;
+    color: gray;
+    margin-top: 2em;
+}
+
+.form{
+    margin-top: .5em;
+
+    button{
+        padding: .7em 0;
+        border: 1px solid $green;
+        background-color: $green;
+        color: white;
+        width: 100%;
+        font-family: 'Inter', 'Segoe UI', sans-serif;
+        font-weight: 700;
+        font-size: .95rem;
+        border-radius: 4px;
+    }
+}
+
+.formElement{ 
+    label{
+        font-family: 'Inter', 'Segoe UI', sans-serif;
+        font-weight: 900;
+        font-size: .8rem;
+    }
+}
+
+.inputContainer{
+    @include flex(flex-start, center);
+    column-gap: .4em;
+    border: 1px solid gray;
+    margin-bottom: .8em;
+    padding: .5em .3em;
+
+    input{
+        font-size: .9rem;
+        border: none;
+        font-family: 'Inter', 'Segoe UI', sans-serif;
+
+        &:focus{
+            outline: none;
+        }
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    input[type=number] {
+      -moz-appearance: textfield;
+    }
+}
+
+.terms{
+    @include flex(flex-start, center);
+    margin-bottom: 1.5em;
+
+    label{
+        font-size: .9em;
+        color: gray;
+    }
+
+    a{
+        color: $green;
+    }
+}

@@ -1,18 +1,105 @@
 .login {
+  position: relative;
   height: 100vh;
-  background-color: #7FEAA5;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #F5F2EA;
 }
 
-.login div:nth-child(1) {
+.logo {
+  position: absolute;
+  top: 19px;
+  left: 3em;
+}
+
+.loginSitting, .loginTyping {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.loginContainer {
+.loginCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.formContainer {
   background-color: white;
-  height: 60vh;
+  border-radius: 10px;
+  padding: 2em;
+  width: 80%;
+  margin-bottom: 1em;
+}
+
+.formContainer h2 {
+  text-align: center;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  font-weight: 900;
+}
+
+.forgotPassword a {
+  color: #00D54B;
+}
+
+.form {
+  margin-top: 2.5em;
+  display: flex;
+  flex-direction: column;
+}
+
+.form input {
+  margin-bottom: .8em;
+  padding: .5em .3em;
+  font-size: .9rem;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+}
+
+.form button {
+  padding: .7em 0;
+  border: 1px solid #00D54B;
+  background-color: #00D54B;
+  color: white;
+  width: 100%;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  font-weight: 700;
+  font-size: .95rem;
+  border-radius: 4px;
+  margin-top: 1.5em;
+}
+
+.seperation {
+  text-align: center;
+  font-size: .9rem;
+  color: gray;
+  margin-top: 1.5em;
+}
+
+.externalLoginContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: .5em;
+}
+
+.externalLogin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid gray;
+}
+
+.externalLogin p {
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  font-weight: 700;
+  font-size: .85rem;
+}
+
+.externalLogin:last-of-type {
+  column-gap: .5em;
+}
+
+.footer a {
+  color: #00D54B;
 }
 /*# sourceMappingURL=login.module.css.map */

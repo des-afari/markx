@@ -1,0 +1,140 @@
+.signup {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.signup > div:nth-child(1) {
+  position: relative;
+  background-color: #7FEAA5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  position: absolute;
+  top: 19px;
+  left: 3em;
+  height: 5em;
+}
+
+.signupContainer {
+  padding: 4em;
+}
+
+.signupContainer h2 {
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  font-weight: 900;
+  margin-bottom: .3em;
+}
+
+.loginLink {
+  color: gray;
+}
+
+.loginLink a {
+  color: #00D54B;
+}
+
+.externalSignupContainer {
+  margin-top: 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: .5em;
+}
+
+.externalSignup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: .5em;
+  border: 1px solid gray;
+}
+
+.externalSignup p {
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  font-weight: 700;
+  font-size: .85rem;
+}
+
+.externalSignup:last-of-type {
+  background-color: #000;
+  color: white;
+}
+
+.seperation {
+  text-align: center;
+  font-size: .9rem;
+  color: gray;
+  margin-top: 2em;
+}
+
+.form {
+  margin-top: .5em;
+}
+
+.form button {
+  padding: .7em 0;
+  border: 1px solid #00D54B;
+  background-color: #00D54B;
+  color: white;
+  width: 100%;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  font-weight: 700;
+  font-size: .95rem;
+  border-radius: 4px;
+}
+
+.formElement label {
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  font-weight: 900;
+  font-size: .8rem;
+}
+
+.inputContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: .4em;
+  border: 1px solid gray;
+  margin-bottom: .8em;
+  padding: .5em .3em;
+}
+
+.inputContainer input {
+  font-size: .9rem;
+  border: none;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+}
+
+.inputContainer input:focus {
+  outline: none;
+}
+
+.inputContainer input::-webkit-outer-spin-button,
+.inputContainer input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.inputContainer input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.terms {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 1.5em;
+}
+
+.terms label {
+  font-size: .9em;
+  color: gray;
+}
+
+.terms a {
+  color: #00D54B;
+}
+/*# sourceMappingURL=signup.module.css.map */
